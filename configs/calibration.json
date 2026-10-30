@@ -1,0 +1,14 @@
+{
+  "columns": 9,
+  "rows": 6,
+  "nominal_square_mm": 20.0,
+  "target_views": 25,
+  "minimum_views": 20,
+  "minimum_board_area": 0.04,
+  "minimum_border_px": 8,
+  "minimum_spacing_px": 8,
+  "minimum_sharpness": 40,
+  "duplicate_rms_px": 12,
+  "maximum_rms_px": 1.0,
+  "maximum_view_rms_px": 1.5
+}

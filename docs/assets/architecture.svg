@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260">
+<rect width="1000" height="260" fill="#0b1220"/>
+<g font-family="Segoe UI,Arial,sans-serif" text-anchor="middle" fill="#e3efff">
+<text x="500" y="35" font-size="24">AEGIS · bench prototype data flow</text>
+<g stroke="#4c789d" stroke-width="2" fill="#15253a"><rect x="25" y="75" width="200" height="115" rx="12"/><rect x="280" y="75" width="210" height="115" rx="12"/><rect x="620" y="75" width="350" height="115" rx="12"/></g>
+<g font-size="19"><text x="125" y="112">Camera Module 3</text><text x="385" y="112">Raspberry Pi 5</text><text x="795" y="112">Windows laptop</text></g>
+<g font-size="15" fill="#a9c4df"><text x="125" y="145">Fixed focus / CSI cable</text><text x="385" y="145">Capture + JPEG server</text><text x="795" y="145">Features → flow → local odometry</text><text x="795" y="170">Dashboard + saved diagnostics</text></g>
+<g stroke="#5de4c7" stroke-width="3"><path d="M230 132h40m-9-7 9 7-9 7"/><path d="M497 132h112m-9-7 9 7-9 7"/></g>
+<text x="555" y="105" font-size="14">SSH tunnel</text><text x="555" y="163" font-size="13">LAN / Wi-Fi</text>
+<text x="500" y="230" fill="#ffcf75" font-size="16">No flight control · no metric floor plan · no required cloud service</text>
+</g></svg>

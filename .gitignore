@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+/data/
+/results/
+/output/
+*.log
+*.pem
+*.key
+*.ppk
+.DS_Store
+Thumbs.db

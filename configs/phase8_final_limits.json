@@ -1,0 +1,74 @@
+{
+  "version": "phase8-final-prototype-v1",
+  "scope": "Controlled research prototype; not GPS-denied navigation qualification or independent metric accuracy.",
+  "rules": [
+    "Limits frozen before fresh acquisition. No estimator/calibration tuning during the final series.",
+    "PASS only with sufficient valid evidence; FAIL for a measured miss; INCONCLUSIVE for invalid execution/missing reference/untestable recovery. No inconclusive gate is counted as passed.",
+    "All required operational gates must pass to accept this prototype scope. Independent metric accuracy/global drift/true north remain NOT DEMONSTRATED, never inferred from resets or fitted scale."
+  ],
+  "transport": {
+    "receive_fps_min": 12,
+    "unintentional_gap_fraction_max": 0.01,
+    "unintentional_connection_errors_max": 0
+  },
+  "reference": {
+    "usable_fraction_min": 0.8,
+    "center_sensitivity_mm_max": 5,
+    "orientation_sensitivity_deg_max": 0.5
+  },
+  "stationary": {
+    "duration_s": 20,
+    "accepted_translation_initializations_max": 0,
+    "rotation_updates_max": 0,
+    "flow_p95_px_max": 0.25,
+    "board_center_radius_mm_max": 5,
+    "board_rotation_from_start_deg_max": 0.5
+  },
+  "horizontal": {
+    "nominal_move_mm": 50,
+    "protocol_reference_excursion_mm": [
+      40,
+      60
+    ],
+    "protocol_reference_return_mm_max": 10,
+    "map_required_before_faults": true,
+    "valid_map_availability_min": 0.9,
+    "moving_reference_samples_per_leg_min": 3,
+    "scaled_reference_rms_mm_max": 5,
+    "scaled_reference_max_mm_max": 10,
+    "reference_endpoint_disagreement_mm_max": 10,
+    "local_loop_endpoint_to_peak_ratio_max": 0.25,
+    "scale_alignment": "One initial accepted map baseline from the shared-camera board reference; never fit using the full trajectory or claim independent metric accuracy."
+  },
+  "rotation": {
+    "requested_turn_deg": 5,
+    "protocol_reference_excursion_deg": [
+      3,
+      8
+    ],
+    "protocol_reference_return_deg_max": 2,
+    "protocol_reference_translation_mm_max": 15,
+    "moving_reference_samples_per_leg_min": 3,
+    "valid_heading_availability_min": 0.9,
+    "same_original_heading_reference_required": true,
+    "reference_rms_deg_max": 1,
+    "reference_max_deg_max": 2,
+    "reference_endpoint_disagreement_deg_max": 1
+  },
+  "recovery": {
+    "occlusion_s_approx": 5,
+    "network_pause_s": 2,
+    "map_and_original_heading_recovery_s_max": 5,
+    "same_map_id_and_reference_required": true,
+    "uncover_origin": "First recorded clear frame with the full board detectable; report stride/bound uncertainty.",
+    "network_origin": "Server SIGCONT acknowledgement with command timing bounds; do not claim clock uncertainty is zero.",
+    "honesty_required": "No position observations on a fully blocked frame; no path bridge over the gap; heading-only recovery never counts as recovered position.",
+    "recovery_grace_s": 5
+  },
+  "fresh_trials": [
+    "stationary",
+    "horizontal_with_occlusion_and_network",
+    "rotation"
+  ],
+  "synthetic_and_saved_regressions": "74 existing tests and frozen replay evidence retained; not substituted for fresh final tests."
+}

@@ -1,0 +1,3 @@
+# Use OS packages python3-picamera2, python3-pil, and python3-venv.
+# Phase 1 JPEG encoding uses the OS-supported Pillow provided with Picamera2.
+# Do not replace libcamera or Picamera2 through pip.

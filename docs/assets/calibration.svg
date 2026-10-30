@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380">
+<defs><pattern id="check" width="40" height="40" patternUnits="userSpaceOnUse"><rect width="40" height="40" fill="white"/><path d="M0 0h20v20H0zM20 20h20v20H20z" fill="#18202c"/></pattern></defs>
+<rect width="900" height="380" fill="#0b1220"/>
+<g font-family="Segoe UI,Arial,sans-serif" fill="#e3efff"><text x="28" y="38" font-size="24">Calibration: move the flat target, keep the camera fixed</text>
+<rect x="35" y="92" width="460" height="230" rx="12" fill="#25364b"/><text x="55" y="120" font-size="17">Full camera image</text>
+<rect x="158" y="148" width="224" height="164" fill="white"/><rect x="170" y="160" width="200" height="140" fill="url(#check)"/>
+<path d="M120 175 80 155m0 0 15-2m-15 2 4 15M410 175l40-20m0 0-15-2m15 2-4 15" stroke="#5de4c7" stroke-width="3" fill="none"/>
+<g font-size="19"><text x="530" y="110">✓ All 9 × 6 internal corners visible</text><text x="530" y="149">✓ White border on every side</text><text x="530" y="188">✓ Sharp, flat, minimal glare</text><text x="530" y="227">✓ Center, edges, distances, tilts</text><text x="530" y="266">✓ Hold still, then press S to save</text></g>
+<text x="32" y="355" font-size="16" fill="#ffcf75">Placement illustration only. Print the supplied PDF at actual size and verify its scale.</text></g></svg>

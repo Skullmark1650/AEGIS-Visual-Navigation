@@ -1,0 +1,16 @@
+{
+  "max_features": 500,
+  "shi_quality_level": 0.01,
+  "shi_min_distance": 10,
+  "shi_block_size": 7,
+  "orb_scale_factor": 1.2,
+  "orb_levels": 8,
+  "orb_fast_threshold": 20,
+  "orb_edge_threshold": 31,
+  "orb_patch_size": 31,
+  "grid_columns": 4,
+  "grid_rows": 3,
+  "minimum_features": 30,
+  "minimum_coverage": 0.25,
+  "opencv_threads": 1
+}

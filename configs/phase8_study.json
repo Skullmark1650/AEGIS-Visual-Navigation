@@ -1,0 +1,55 @@
+{
+  "cases": [
+    {
+      "case": "stationary",
+      "validation": "results/reports/stationary-20261029-000109-validation.json",
+      "recording": "data/validation/stationary-20261029-000109"
+    },
+    {
+      "case": "horizontal",
+      "validation": "results/reports/horizontal-20261029-030054-validation.json",
+      "recording": "data/validation/horizontal-20261029-030054"
+    },
+    {
+      "case": "vertical",
+      "validation": "results/reports/vertical-20261029-030552-validation.json",
+      "recording": "data/validation/vertical-20261029-030552"
+    },
+    {
+      "case": "rotation",
+      "validation": "results/reports/rotation-20261029-031748-validation.json",
+      "recording": "data/validation/rotation-20261029-031748"
+    },
+    {
+      "case": "low-light",
+      "validation": "results/reports/low-light-20261029-032158-validation.json",
+      "recording": "data/validation/low-light-20261029-032158"
+    },
+    {
+      "case": "low-texture",
+      "validation": "results/reports/low-texture-20261029-033007-validation.json",
+      "recording": "data/validation/low-texture-20261029-033007"
+    },
+    {
+      "case": "rapid-motion",
+      "validation": "results/reports/rapid-motion-20261029-033536-validation.json",
+      "recording": "data/validation/rapid-motion-20261029-033536"
+    },
+    {
+      "case": "feature-loss",
+      "validation": "results/reports/feature-loss-20261029-034548-validation.json",
+      "recording": "data/validation/feature-loss-20261029-034548"
+    },
+    {
+      "case": "interruption",
+      "validation": "results/reports/network-interruption-20261029-035012-validation.json",
+      "recording": "data/validation/network-interruption-20261029-035012"
+    },
+    {
+      "case": "repeat-path",
+      "validation": "results/reports/repeat-path-20261029-035424-validation.json",
+      "recording": "data/validation/repeat-path-20261029-035424"
+    }
+  ],
+  "limits": "Frozen estimator/calibration; manual motion confirmations, correlated board PnP, no independent continuous pose ground truth. UI countdown added during series."
+}
