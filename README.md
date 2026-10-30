@@ -33,7 +33,7 @@ Temporary rotation gaps, lost maps, and unsuccessful recovery still occur. A sho
 1. Follow [Pi + laptop setup](docs/GETTING_STARTED.md).
 2. Follow [camera calibration](docs/CALIBRATION_GUIDE.md) before odometry/dashboard use.
 3. Read [how to use the displays and save recordings](docs/USER_GUIDE.md).
-4. Read [final results and limitations](docs/PHASE8_RESULTS.md).
+4. Read [final results and limitations](docs/phase8_results.md).
 
 Once configured, start the dashboard from Windows PowerShell in the repository:
 
@@ -61,7 +61,7 @@ Tested Pi environment: Debian 12 Bookworm, aarch64, Python 3.11, OS-provided Pic
 
 Phase 8 passed the agreed **limited local-map prototype checks** using `retained-map-recovery-v10`. It did not establish continuous global navigation or independent metric accuracy. Two fresh validation recordings contained 4,988 frames; preceding software qualification covered 84 tests and 27,059 saved frames. Fresh network recovery was 1.657 seconds, and covered-view recovery was 1.797 seconds relative to the first sampled clear frame. Both occurred in a supported stationary local map. Tracking losses elsewhere remain documented.
 
-See [the readable final assessment](docs/PHASE8_RESULTS.md), the [original detailed final report](docs/phase8_v10_final_series.md), and [research archive notes](docs/RESEARCH_ARCHIVE.md). Private raw recordings and machine-specific reports are excluded; published measurements are reported experimental results, not reproducible evidence bundled in this repository.
+See [the readable final assessment](docs/phase8_results.md), the [original detailed final report](docs/phase8_v10_final_series.md), and [research archive notes](docs/RESEARCH_ARCHIVE.md). Private raw recordings and machine-specific reports are excluded; published measurements are reported experimental results, not reproducible evidence bundled in this repository.
 
 ## Repository guide
 
